@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:gravity="center_horizontal">
+
+        <!-- Judul Halaman -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Resep Main Course"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Nama Resep -->
+        <EditText
+            android:id="@+id/etRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Resep"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Deskripsi Resep -->
+        <EditText
+            android:id="@+id/etRecipeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Resep"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Bahan-Bahan Resep -->
+        <EditText
+            android:id="@+id/etIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bahan-Bahan"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Langkah-Langkah Memasak -->
+        <EditText
+            android:id="@+id/etSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Langkah-Langkah Memasak"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- Tombol Simpan, Update, dan Hapus Resep -->
+        <Button
+            android:id="@+id/btnresepmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Simpan Resep"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

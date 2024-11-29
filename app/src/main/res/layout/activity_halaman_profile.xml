@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".halaman_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="16dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/tvAccountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Akun"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Email Label and EditText -->
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Email:"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user@example.com"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Password Label and EditText -->
+        <TextView
+            android:id="@+id/tvPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Button to Update Password -->
+        <Button
+            android:id="@+id/btnUpdatePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Akun"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Button to Delete Account -->
+        <Button
+            android:id="@+id/btnDeleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hapus Akun"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

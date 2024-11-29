@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for Account Creation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORM REGISTERASI"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="24dp"/>
+
+        <!-- Name Input Field -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPersonName"/>
+
+        <!-- Email Input Field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="16dp"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Password Input Field -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kata Sandi"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"/>
+
+        <!-- Confirm Password Input Field -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Konfirmasi Kata Sandi"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:backgroundTint="#000000"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/btkehalamanlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun? Masuk"
+            android:backgroundTint="#A86809"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

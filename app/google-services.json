@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "919413775588",
+    "project_id": "resepmasakan-2",
+    "storage_bucket": "resepmasakan-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919413775588:android:7667d5ea8c52cc8f9f60f1",
+        "android_client_info": {
+          "package_name": "com.alfin.resepmasakan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3rA89y3MEzPSQeW05IUQ1wRsyCETUmic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

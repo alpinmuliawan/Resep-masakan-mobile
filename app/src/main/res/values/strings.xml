@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Resep Masakan</string>
+    <array name="KategoriMasakan">
+        <item>Maincourse</item>
+        <item>Appetizer</item>
+        <item>Dessert</item>
+    </array>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".resep_appetizer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Section with Back Button, Title, and Add Recipe Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back"
+                android:contentDescription="Back Button" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Appetizer"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+
+            <!-- Add Recipe Button -->
+            <ImageButton
+                android:id="@+id/tambahresep"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/tambah"/>
+        </LinearLayout>
+
+        <!-- Horizontal ScrollView for Recipes Display -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Each Recipe Image -->
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/pembuka"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/appetize2"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/appetizer4"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/appetize1"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- RecyclerView for Recipe List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/list_resep" />
+
+    </LinearLayout>
+</ScrollView>
